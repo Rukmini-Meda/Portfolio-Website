@@ -12,20 +12,18 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: slightBackgroundColor,
-      body: Container(
-        child: Column(
+        backgroundColor: slightBackgroundColor,
+        body: ListView(
           children: <Widget>[
-            Introduction(),
-            Education(),
-            Skills(),
-            Projects(),
-            ProblemSolving(),
-            Contact(),
-            Footer()
-          ],
-        ),
-      ),
-    );
+              Introduction(),
+              Education(),
+              Skills(),
+              Projects(),
+              ProblemSolving(),
+              Contact(),
+              Footer()
+            ],
+          ),
+      );
   }
 }
